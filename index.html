@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stunning DIY Paper Flowers Templates - Free SVG Downloads | CraftedByPixels</title>
-    <meta name="description" content="Create beautiful paper flowers with our premium SVG templates. Perfect for Cricut & Silhouette machines. Get instant access to 1000+ designs at Creative Fabrica!">
+    <title>DIY Paper Flowers SVG Templates - Premium Cut Files | CraftedByPixels</title>
+    <meta name="description" content="Create stunning paper flowers with 634+ professional SVG templates from Creative Fabrica. Commercial license included. Perfect for Cricut & Silhouette machines.">
     
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="DIY paper flowers, SVG templates, Cricut designs, Creative Fabrica, paper crafts, handmade flowers, digital downloads">
+    <meta name="keywords" content="paper flower SVG, DIY paper flowers, Cricut paper flowers, 3D flower templates, paper flower cut files, commercial license SVG">
     <meta name="author" content="CraftedByPixels">
-    <link rel="canonical" href="https://CraftedByPixels.github.io/pinterest-landing-pages/">
+    <link rel="canonical" href="https://CraftedByPixels.github.io/pinterest-landing-pages/paper-flowers.html">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Stunning DIY Paper Flowers Templates - Free SVG Downloads">
-    <meta property="og:description" content="Create beautiful paper flowers with our premium SVG templates. Perfect for Cricut & Silhouette machines.">
-    <meta property="og:image" content="https://CraftedByPixels.github.io/pinterest-landing-pages/images/paper-flowers-hero.jpg">
-    <meta property="og:url" content="https://CraftedByPixels.github.io/pinterest-landing-pages/">
+    <meta property="og:title" content="DIY Paper Flowers SVG Templates - Premium Cut Files">
+    <meta property="og:description" content="Create stunning paper flowers with 634+ professional SVG templates. Commercial license included.">
+    <meta property="og:image" content="https://CraftedByPixels.github.io/pinterest-landing-pages/images/paper-flowers-og.jpg">
+    <meta property="og:url" content="https://CraftedByPixels.github.io/pinterest-landing-pages/paper-flowers.html">
     <meta property="og:type" content="website">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Stunning DIY Paper Flowers Templates">
-    <meta name="twitter:description" content="Create beautiful paper flowers with premium SVG templates. Perfect for Cricut & Silhouette machines.">
-    <meta name="twitter:image" content="https://CraftedByPixels.github.io/pinterest-landing-pages/images/paper-flowers-hero.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
@@ -37,6 +33,25 @@
     </script>
     
     <style>
+        :root {
+            --primary: #e91e63;
+            --primary-light: #f06292;
+            --primary-dark: #c2185b;
+            --secondary: #4caf50;
+            --accent: #ff9800;
+            --text: #2c3e50;
+            --text-light: #546e7a;
+            --bg: #fafafa;
+            --white: #ffffff;
+            --border: #e0e0e0;
+            --shadow: 0 4px 20px rgba(0,0,0,0.1);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --font-primary: 'Inter', sans-serif;
+            --font-display: 'Playfair Display', serif;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -44,11 +59,10 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: var(--font-primary);
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            color: var(--text);
+            background: var(--bg);
         }
 
         .container {
@@ -59,53 +73,63 @@
 
         /* Header */
         .header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 15px 0;
+            background: var(--white);
+            box-shadow: var(--shadow);
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
         }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 16px 0;
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #E60023;
-            background: linear-gradient(45deg, #E60023, #FF6B35);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
         }
 
-        .nav-links {
+        .nav {
             display: flex;
-            gap: 30px;
-            list-style: none;
+            gap: 32px;
+            align-items: center;
         }
 
-        .nav-links a {
+        .nav-link {
+            color: var(--text-light);
             text-decoration: none;
-            color: #333;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: #E60023;
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .cta-header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-header:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 100px 0;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+            padding: 80px 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -118,7 +142,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="pattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23pattern)"/></svg>');
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="200" r="100" fill="rgba(233,30,99,0.1)"/><circle cx="800" cy="300" r="150" fill="rgba(233,30,99,0.05)"/><circle cx="600" cy="800" r="120" fill="rgba(233,30,99,0.08)"/></svg>');
         }
 
         .hero-content {
@@ -126,484 +150,531 @@
             z-index: 2;
         }
 
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            background: linear-gradient(45deg, #fff, #ffeb3b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .hero-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 24px;
+            line-height: 1.2;
         }
 
         .hero-subtitle {
-            font-size: 1.4rem;
-            margin-bottom: 50px;
-            opacity: 0.95;
+            font-size: 1.25rem;
+            color: var(--text-light);
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto 40px;
         }
 
-        .hero-image {
-            margin: 50px 0;
-            position: relative;
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
         }
 
-        .hero-image img {
-            max-width: 700px;
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-            transition: transform 0.3s ease;
+        .hero-stat {
+            text-align: center;
         }
 
-        .hero-image img:hover {
-            transform: scale(1.02);
+        .hero-stat-number {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .hero-stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary {
+            background: var(--primary);
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: var(--text);
+            padding: 16px 32px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Trust Indicators */
+        .trust-bar {
+            background: var(--white);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .trust-items {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .trust-icon {
+            color: var(--secondary);
+            font-weight: bold;
         }
 
         /* Problem Section */
         .problem {
-            background: white;
-            padding: 100px 0;
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .section-header {
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
         }
 
-        .problem h2 {
-            font-size: 3rem;
-            margin-bottom: 60px;
-            color: #2c3e50;
-            position: relative;
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 20px;
         }
 
-        .problem h2::after {
-            content: '';
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(45deg, #E60023, #FF6B35);
-            border-radius: 2px;
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
         }
 
-        .problem-grid {
+        .problems-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
 
-        .problem-item {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 50px 30px;
-            border-radius: 20px;
-            border-left: 6px solid #e74c3c;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+        .problem-card {
+            background: #fff5f5;
+            padding: 40px 30px;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            border-left: 4px solid #ef4444;
+            transition: transform 0.3s ease;
         }
 
-        .problem-item::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(45deg, rgba(231, 76, 60, 0.1), transparent);
-            border-radius: 50%;
-            transition: all 0.3s ease;
-        }
-
-        .problem-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(231, 76, 60, 0.3);
-        }
-
-        .problem-item:hover::before {
-            transform: scale(3);
+        .problem-card:hover {
+            transform: translateY(-5px);
         }
 
         .problem-icon {
-            font-size: 4rem;
-            margin-bottom: 30px;
+            font-size: 3rem;
+            margin-bottom: 20px;
             display: block;
         }
 
         .problem-text {
-            font-size: 1.2rem;
-            color: #555;
+            font-size: 1.1rem;
+            color: var(--text);
             font-weight: 500;
-            line-height: 1.6;
         }
 
         /* Solution Section */
         .solution {
-            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-            color: white;
-            padding: 100px 0;
-            position: relative;
-        }
-
-        .solution::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="solution-pattern" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M20 10 L30 20 L20 30 L10 20 Z" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23solution-pattern)"/></svg>');
+            padding: 80px 0;
+            background: var(--bg);
         }
 
         .solution-content {
-            position: relative;
-            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
         }
 
-        .solution h2 {
+        .solution-text h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 24px;
+        }
+
+        .solution-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 32px;
+        }
+
+        .solution-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .solution-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .solution-feature::before {
+            content: '✓';
+            background: var(--secondary);
+            color: var(--white);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .solution-image {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 40px;
             text-align: center;
-            font-size: 3.2rem;
-            margin-bottom: 60px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            box-shadow: var(--shadow);
         }
 
-        .benefits-grid {
+        .placeholder-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #fce4ec, #f8bbd9);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary);
+        }
+
+        /* Categories Section */
+        .categories {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .category-card {
+            background: var(--bg);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .category-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .category-count {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .category-link {
+            background: var(--primary);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .category-link:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 80px 0;
+            background: var(--bg);
+        }
+
+        .pricing-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 60px;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
-        .benefit {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(15px);
-            padding: 40px;
-            border-radius: 20px;
+        .pricing-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 40px 30px;
             text-align: center;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: 2px solid var(--border);
             transition: all 0.3s ease;
             position: relative;
-            overflow: hidden;
         }
 
-        .benefit::before {
-            content: '';
+        .pricing-card.featured {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: 'Best Value';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            transition: all 0.3s ease;
-            transform: scale(0);
-        }
-
-        .benefit:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.25);
-            border-color: rgba(255, 255, 255, 0.4);
-        }
-
-        .benefit:hover::before {
-            transform: scale(1);
-        }
-
-        .benefit h3 {
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-            color: #fff;
-            position: relative;
-            z-index: 2;
-        }
-
-        .benefit p {
-            opacity: 0.95;
-            line-height: 1.7;
-            font-size: 1.1rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Social Proof */
-        .social-proof {
-            background: #2c3e50;
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .social-proof h3 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .social-proof p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 50px;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 50px;
-            margin-top: 50px;
-        }
-
-        .stat {
-            text-align: center;
-            position: relative;
-        }
-
-        .stat-number {
-            font-size: 4rem;
-            font-weight: bold;
-            color: #74b9ff;
-            display: block;
-            text-shadow: 0 0 20px rgba(116, 185, 255, 0.5);
-        }
-
-        .stat-label {
-            font-size: 1.1rem;
-            opacity: 0.8;
-            margin-top: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* CTA Section */
-        .cta {
-            background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
-            color: white;
-            padding: 120px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="cta-pattern" width="30" height="30" patternUnits="userSpaceOnUse"><polygon points="15,5 25,15 15,25 5,15" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23cta-pattern)"/></svg>');
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .cta h2 {
-            font-size: 3.5rem;
-            margin-bottom: 30px;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
-        }
-
-        .cta-text {
-            font-size: 1.3rem;
-            margin-bottom: 50px;
-            opacity: 0.95;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #fff;
-            color: #d63031;
-            padding: 25px 60px;
-            text-decoration: none;
-            border-radius: 60px;
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin: 30px 0;
-            transition: all 0.4s ease;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 50%;
+            top: -12px;
             left: 50%;
-            width: 0;
-            height: 0;
-            background: linear-gradient(45deg, #d63031, #e17055);
-            transition: all 0.4s ease;
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 25px 70px rgba(0,0,0,0.5);
-            color: white;
-        }
-
-        .cta-button:hover::before {
-            width: 300%;
-            height: 300%;
-        }
-
-        .cta-button span {
-            position: relative;
-            z-index: 2;
-        }
-
-        .trust-signals {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-top: 30px;
-        }
-
-        .guarantee {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(15px);
-            padding: 30px 40px;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: var(--white);
+            padding: 6px 20px;
             border-radius: 20px;
-            margin-top: 50px;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .pricing-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+
+        .pricing-price {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .pricing-period {
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .pricing-feature {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .pricing-feature::before {
+            content: '✓';
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .pricing-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 14px 28px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .pricing-cta:hover {
+            background: var(--primary-dark);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            padding: 20px 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            padding-bottom: 20px;
+            line-height: 1.6;
         }
 
         /* Footer */
         .footer {
-            background: #2c3e50;
-            color: white;
+            background: var(--text);
+            color: var(--white);
             padding: 60px 0 30px;
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 50px;
+            gap: 40px;
             margin-bottom: 40px;
         }
 
         .footer-section h3 {
-            margin-bottom: 25px;
-            color: #74b9ff;
-            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
         }
 
         .footer-links {
             list-style: none;
-            padding: 0;
         }
 
         .footer-links li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .footer-links a {
-            color: #bdc3c7;
+            color: rgba(255,255,255,0.8);
             text-decoration: none;
             transition: color 0.3s ease;
-            font-size: 1.1rem;
         }
 
         .footer-links a:hover {
-            color: #74b9ff;
+            color: var(--white);
         }
 
-        .copyright {
-            border-top: 2px solid #34495e;
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.2);
             padding-top: 30px;
             text-align: center;
-            opacity: 0.8;
-            font-size: 1rem;
+            color: rgba(255,255,255,0.8);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.8rem;
+            .container {
+                padding: 0 16px;
             }
-            
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .problem h2, .solution h2, .cta h2 {
-                font-size: 2.2rem;
-            }
-            
-            .nav-links {
+
+            .nav {
                 display: none;
             }
-            
-            .benefits-grid, .problem-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .cta-button {
-                padding: 20px 40px;
-                font-size: 1.2rem;
-            }
 
-            .hero, .problem, .solution, .cta {
+            .hero {
                 padding: 60px 0;
             }
-        }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
+            .hero-stats {
+                gap: 20px;
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
             }
-        }
 
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
+            .solution-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
             }
-            50% {
-                transform: scale(1.05);
+
+            .pricing-card.featured {
+                transform: none;
             }
-        }
 
-        .hero-content {
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .cta-button {
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        .cta-button:hover {
-            animation: none;
-        }
-
-        /* Scroll reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -612,124 +683,266 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">🎨 CraftedByPixels</div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#templates">Templates</a></li>
-                        <li><a href="#tutorials">Tutorials</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
+                <div class="logo">🌸 CraftedByPixels</div>
+                <nav class="nav">
+                    <a href="#categories" class="nav-link">Browse Templates</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=header-cta" 
+                       class="cta-header" onclick="trackAffiliateClick('header_cta')">Start Free Trial</a>
                 </nav>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Create Stunning Paper Flowers That Look Real!</h1>
-                <p class="hero-subtitle">Transform ordinary paper into breathtaking floral masterpieces with our premium SVG templates. Perfect for weddings, home decor, and special occasions!</p>
-                <div class="hero-image">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='500' viewBox='0 0 700 500'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff9a9e'/%3E%3Cstop offset='100%25' style='stop-color:%23fecfef'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='700' height='500' fill='url(%23bg)'/%3E%3Cg transform='translate(350,250)'%3E%3Ccircle cx='0' cy='0' r='120' fill='%23fff' opacity='0.9'/%3E%3Cpath d='M-50,-50 Q0,-100 50,-50 Q100,0 50,50 Q0,100 -50,50 Q-100,0 -50,-50 Z' fill='%23ff6b9d'/%3E%3Ccircle cx='0' cy='0' r='30' fill='%23ffd93d'/%3E%3Cpath d='M-80,-30 Q-60,-50 -40,-30 Q-20,-10 -40,10 Q-60,30 -80,10 Q-100,-10 -80,-30 Z' fill='%23ff758c' opacity='0.8'/%3E%3Cpath d='M40,-30 Q60,-50 80,-30 Q100,-10 80,10 Q60,30 40,10 Q20,-10 40,-30 Z' fill='%23ff758c' opacity='0.8'/%3E%3Cpath d='M-30,-80 Q-10,-100 10,-80 Q30,-60 10,-40 Q-10,-20 -30,-40 Q-50,-60 -30,-80 Z' fill='%23ff758c' opacity='0.8'/%3E%3Cpath d='M-30,40 Q-10,20 10,40 Q30,60 10,80 Q-10,100 -30,80 Q-50,60 -30,40 Z' fill='%23ff758c' opacity='0.8'/%3E%3C/g%3E%3Ctext x='350' y='450' text-anchor='middle' fill='white' font-family='Arial' font-size='32' font-weight='bold'%3EPremium Paper Flower Templates%3C/text%3E%3C/svg%3E" alt="Beautiful DIY Paper Flowers Collection">
+                <div class="hero-badge">🔥 634+ Paper Flower Templates Available</div>
+                
+                <h1 class="hero-title">Professional Paper Flower SVG Templates for Stunning DIY Projects</h1>
+                
+                <p class="hero-subtitle">
+                    Create beautiful, realistic paper flowers with professional-grade SVG cut files. 
+                    Perfect for Cricut & Silhouette machines. Commercial license included.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">634+</span>
+                        <span class="hero-stat-label">Paper Flower Designs</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">331+</span>
+                        <span class="hero-stat-label">3D Flower Templates</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">100%</span>
+                        <span class="hero-stat-label">Commercial Licensed</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=hero-primary" 
+                       class="cta-primary" onclick="trackAffiliateClick('hero_primary_cta')">
+                        <span>🌸 Browse Paper Flower Templates</span>
+                    </a>
+                    <a href="#pricing" class="cta-secondary">See Pricing Options</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>10 Free Downloads Trial</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>Commercial License Included</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>Cricut & Silhouette Compatible</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">✓</span>
+                    <span>Cancel Anytime</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Problem Section -->
-    <section class="problem reveal">
+    <section class="problem">
         <div class="container">
-            <h2>Frustrated with Your Current Crafting Experience?</h2>
-            <div class="problem-grid">
-                <div class="problem-item">
-                    <div class="problem-icon">😤</div>
-                    <p class="problem-text">Spending hours searching for quality SVG files that actually work with your Cricut machine?</p>
+            <div class="section-header">
+                <h2 class="section-title">Struggling with Paper Flower Projects?</h2>
+                <p class="section-subtitle">We understand the common challenges crafters face when creating paper flowers</p>
+            </div>
+
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <span class="problem-icon">😤</span>
+                    <p class="problem-text">Spending hours searching for paper flower templates that actually cut properly on your machine?</p>
                 </div>
-                <div class="problem-item">
-                    <div class="problem-icon">💸</div>
-                    <p class="problem-text">Paying $5-15 for individual templates that don't match your creative vision?</p>
+                <div class="problem-card">
+                    <span class="problem-icon">💸</span>
+                    <p class="problem-text">Buying individual SVG files for $5-15 each that don't work well together?</p>
                 </div>
-                <div class="problem-item">
-                    <div class="problem-icon">😞</div>
-                    <p class="problem-text">Downloading "free" templates that look amateur and ruin your beautiful projects?</p>
+                <div class="problem-card">
+                    <span class="problem-icon">😞</span>
+                    <p class="problem-text">Downloading free templates that look amateur and don't have proper layering?</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Solution Section -->
-    <section class="solution reveal">
+    <section class="solution">
         <div class="container">
             <div class="solution-content">
-                <h2>Discover Creative Fabrica's Unlimited Design Universe</h2>
-                <div class="benefits-grid">
-                    <div class="benefit">
-                        <h3>🎨 11+ Million Premium Assets</h3>
-                        <p>Professional SVG files, fonts, graphics, and printables for every project imaginable</p>
-                    </div>
-                    <div class="benefit">
-                        <h3>💼 Commercial License Included</h3>
-                        <p>Sell what you make with complete confidence - perfect for growing your craft business</p>
-                    </div>
-                    <div class="benefit">
-                        <h3>🖨️ Universal Compatibility</h3>
-                        <p>Works seamlessly with Cricut, Silhouette, and all major cutting machines</p>
-                    </div>
-                    <div class="benefit">
-                        <h3>🆕 Daily Fresh Designs</h3>
-                        <p>New trending designs added every single day to keep your creativity flowing</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof -->
-    <section class="social-proof reveal">
-        <div class="container">
-            <h3>Join Over 2 Million Creative Makers Worldwide</h3>
-            <p>Trusted by professional crafters, successful business owners, and passionate DIY enthusiasts</p>
-            <div class="stats-grid">
-                <div class="stat">
-                    <span class="stat-number">2M+</span>
-                    <span class="stat-label">Active Members</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">11M+</span>
-                    <span class="stat-label">Design Assets</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">New Designs Daily</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">99%</span>
-                    <span class="stat-label">Satisfaction Rate</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta reveal">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Create Like a Pro?</h2>
-                <p class="cta-text">Get instant access to unlimited premium templates and start creating stunning projects that everyone will admire!</p>
-                <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=bridge&utm_campaign=paper-flowers-craftedbypixels" 
-                   class="cta-button" 
-                   onclick="trackAffiliateClick('creative_fabrica_main_cta')">
-                    <span>🎁 Start Creating Now - 7 Days FREE!</span>
-                </a>
-                <div class="trust-signals">
-                    ✅ No credit card required • ✅ Cancel anytime • ✅ Instant access to everything
+                <div class="solution-text">
+                    <h2>Access 634+ Professional Paper Flower Templates</h2>
+                    <p>Creative Fabrica offers the largest collection of paper flower SVG templates, designed by professional artists and tested for cutting accuracy.</p>
+                    
+                    <ul class="solution-features">
+                        <li class="solution-feature">High-quality SVG files optimized for Cricut & Silhouette</li>
+                        <li class="solution-feature">Detailed assembly instructions included</li>
+                        <li class="solution-feature">Multiple file formats: SVG, PNG, PDF, DXF, EPS</li>
+                        <li class="solution-feature">Commercial license for selling your creations</li>
+                        <li class="solution-feature">New designs added weekly</li>
+                    </ul>
+                    
+                    <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=solution-cta" 
+                       class="cta-primary" onclick="trackAffiliateClick('solution_cta')">
+                        Explore Paper Flower Collection
+                    </a>
                 </div>
                 
-                <div class="guarantee">
-                    <strong>💯 30-Day Money-Back Guarantee</strong><br>
-                    Not completely satisfied? Get a full refund, no questions asked!
+                <div class="solution-image">
+                    <div class="placeholder-image">🌸</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Paper Flower Template Categories</h2>
+                <p class="section-subtitle">Find the perfect templates for your specific project needs</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <span class="category-icon">🌹</span>
+                    <h3 class="category-title">Paper Flower SVG</h3>
+                    <p class="category-count">634 templates available</p>
+                    <a href="https://www.creativefabrica.com/ref/8035929/tag/paper-flower-svg/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=category-paper-flower-svg" 
+                       class="category-link" onclick="trackAffiliateClick('category_paper_flower_svg')">Browse Collection</a>
+                </div>
+
+                <div class="category-card">
+                    <span class="category-icon">🌺</span>
+                    <h3 class="category-title">3D Paper Flowers</h3>
+                    <p class="category-count">331 templates available</p>
+                    <a href="https://www.creativefabrica.com/ref/8035929/subscriptions/3d-svg/flowers-3d-svg/paper-flowers-3d-svg/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=category-3d-flowers" 
+                       class="category-link" onclick="trackAffiliateClick('category_3d_flowers')">Browse 3D Collection</a>
+                </div>
+
+                <div class="category-card">
+                    <span class="category-icon">🎨</span>
+                    <h3 class="category-title">All 3D SVG Crafts</h3>
+                    <p class="category-count">9,444+ craft files</p>
+                    <a href="https://www.creativefabrica.com/ref/8035929/3d-svg/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=category-3d-crafts" 
+                       class="category-link" onclick="trackAffiliateClick('category_3d_crafts')">Explore All Crafts</a>
+                </div>
+
+                <div class="category-card">
+                    <span class="category-icon">🆓</span>
+                    <h3 class="category-title">Free Templates</h3>
+                    <p class="category-count">Daily free downloads</p>
+                    <a href="https://www.creativefabrica.com/ref/8035929/freebies/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=category-freebies" 
+                       class="category-link" onclick="trackAffiliateClick('category_freebies')">Get Free Files</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Access Level</h2>
+                <p class="section-subtitle">Honest pricing with no hidden fees. All plans include commercial licensing.</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Free Trial</h3>
+                    <div class="pricing-price">Free</div>
+                    <div class="pricing-period">10 downloads or 1 month</div>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">10 free premium downloads</li>
+                        <li class="pricing-feature">Access to all paper flower templates</li>
+                        <li class="pricing-feature">Commercial license included</li>
+                        <li class="pricing-feature">All file formats (SVG, PNG, PDF, etc.)</li>
+                    </ul>
+                    <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=free-trial" 
+                       class="pricing-cta" onclick="trackAffiliateClick('pricing_free_trial')">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3 class="pricing-title">All Access Monthly</h3>
+                    <div class="pricing-price">$9</div>
+                    <div class="pricing-period">per month</div>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">Unlimited downloads</li>
+                        <li class="pricing-feature">Access to all 634+ paper flower templates</li>
+                        <li class="pricing-feature">11+ million other design assets</li>
+                        <li class="pricing-feature">Commercial license included</li>
+                        <li class="pricing-feature">CF Studio design tools</li>
+                        <li class="pricing-feature">Mobile app access</li>
+                    </ul>
+                    <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=monthly-plan" 
+                       class="pricing-cta" onclick="trackAffiliateClick('pricing_monthly')">Get Monthly Access</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">All Access Yearly</h3>
+                    <div class="pricing-price">$3.99</div>
+                    <div class="pricing-period">per month (billed annually at $47)</div>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">Everything in Monthly plan</li>
+                        <li class="pricing-feature">56% savings compared to monthly</li>
+                        <li class="pricing-feature">Priority customer support</li>
+                        <li class="pricing-feature">Early access to new releases</li>
+                    </ul>
+                    <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=paper-flowers-landing&utm_campaign=yearly-plan" 
+                       class="pricing-cta" onclick="trackAffiliateClick('pricing_yearly')">Get Best Value</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Do I really get 634+ paper flower templates? <span>+</span></div>
+                    <div class="faq-answer">Yes! Creative Fabrica currently has 634+ paper flower SVG templates, plus 331+ 3D paper flower templates. New designs are added regularly.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I use these templates to sell my paper flower creations? <span>+</span></div>
+                    <div class="faq-answer">Absolutely! All templates come with a commercial license, allowing you to sell unlimited physical products made from these designs.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Will these work with my Cricut/Silhouette machine? <span>+</span></div>
+                    <div class="faq-answer">Yes! All templates are provided in SVG format and are compatible with Cricut Design Space, Silhouette Studio, and other cutting software.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What's included in the free trial? <span>+</span></div>
+                    <div class="faq-answer">You get 10 free downloads of premium templates OR 1 month of access (whichever comes first). No credit card required for the trial.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I cancel my subscription anytime? <span>+</span></div>
+                    <div class="faq-answer">Yes, you can cancel anytime with no questions asked. You'll keep access until the end of your paid period, and you can continue using any templates you've downloaded.</div>
                 </div>
             </div>
         </div>
@@ -740,81 +953,95 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3>CraftedByPixels</h3>
+                    <p>Helping crafters access premium paper flower templates and design resources since 2025.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Paper Flower Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="#templates">Browse Templates</a></li>
-                        <li><a href="#tutorials">Free Tutorials</a></li>
-                        <li><a href="#blog">Craft Blog</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="https://www.creativefabrica.com/ref/8035929/tag/paper-flower-svg/">Paper Flower SVG (634+ templates)</a></li>
+                        <li><a href="https://www.creativefabrica.com/ref/8035929/subscriptions/3d-svg/flowers-3d-svg/paper-flowers-3d-svg/">3D Paper Flowers (331+ templates)</a></li>
+                        <li><a href="https://www.creativefabrica.com/ref/8035929/3d-svg/">All 3D Crafts</a></li>
+                        <li><a href="https://www.creativefabrica.com/ref/8035929/freebies/">Free Templates</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Popular Categories</h3>
+                    <h3>Support</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Paper Flowers</a></li>
-                        <li><a href="#">Wedding Templates</a></li>
-                        <li><a href="#">Holiday Crafts</a></li>
-                        <li><a href="#">Home Decor</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="https://help.creativefabrica.com/">Creative Fabrica Help</a></li>
+                        <li><a href="https://www.creativefabrica.com/subscription-license/">License Info</a></li>
+                        <li><a href="mailto:support@craftedbypixels.com">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Follow CraftedByPixels</h3>
+                    <h3>Follow Us</h3>
                     <ul class="footer-links">
                         <li><a href="https://www.pinterest.com/CraftedByPixels/">📌 Pinterest</a></li>
                         <li><a href="#">📷 Instagram</a></li>
                         <li><a href="#">👥 Facebook</a></li>
-                        <li><a href="#">🎥 YouTube</a></li>
+                        <li><a href="#">✉️ Newsletter</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 CraftedByPixels. This page contains affiliate links. We may earn a commission from purchases made through these links at no extra cost to you.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CraftedByPixels. This page contains affiliate links to Creative Fabrica. We may earn a commission from purchases made through these links at no extra cost to you. All prices and information are accurate as of the publication date.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        // Affiliate link tracking
-        function trackAffiliateClick(linkName) {
-            // Google Analytics event tracking
+        // Affiliate link tracking with detailed parameters
+        function trackAffiliateClick(source) {
+            // Google Analytics tracking
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'click', {
-                    'event_category': 'affiliate',
-                    'event_label': linkName,
-                    'value': 1
+                    'event_category': 'affiliate_click',
+                    'event_label': source,
+                    'custom_parameters': {
+                        'affiliate_id': '8035929',
+                        'page_type': 'paper_flowers_landing',
+                        'niche': 'paper_flowers',
+                        'conversion_source': source
+                    }
                 });
             }
-            
-            // Custom tracking for CraftedByPixels
-            console.log('CraftedByPixels - Affiliate click tracked:', linkName);
-            
-            // Show loading state
-            const button = event.target;
-            if (button.classList.contains('cta-button')) {
-                button.style.transform = 'scale(0.95)';
+
+            // Console logging for debugging
+            console.log('CraftedByPixels - Affiliate click tracked:', {
+                source: source,
+                timestamp: new Date().toISOString(),
+                page: 'paper-flowers-landing',
+                affiliate_id: '8035929'
+            });
+
+            // Visual feedback
+            const button = event.target.closest('a, button');
+            if (button) {
+                const originalText = button.textContent;
+                button.style.opacity = '0.8';
                 setTimeout(() => {
-                    button.innerHTML = '<span>Redirecting to Creative Fabrica...</span>';
-                }, 100);
+                    button.style.opacity = '1';
+                }, 200);
             }
         }
 
-        // Scroll reveal animation
-        function revealOnScroll() {
-            const reveals = document.querySelectorAll('.reveal');
-            
-            reveals.forEach(reveal => {
-                const windowHeight = window.innerHeight;
-                const elementTop = reveal.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    reveal.classList.add('active');
+        // Page view tracking
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                'page_title': document.title,
+                'page_location': window.location.href,
+                'custom_parameters': {
+                    'affiliate_id': '8035929',
+                    'page_type': 'paper_flowers_landing',
+                    'niche': 'paper_flowers',
+                    'landing_version': 'honest_v1'
                 }
             });
         }
 
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -828,66 +1055,81 @@
             });
         });
 
-        // Page view tracking
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'page_view', {
-                'page_title': document.title,
-                'page_location': window.location.href,
-                'page_path': window.location.pathname,
-                'custom_map': {
-                    'affiliate_id': '8035929',
-                    'brand': 'CraftedByPixels'
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+                
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.display = 'none';
+                });
+                document.querySelectorAll('.faq-question span').forEach(span => {
+                    span.textContent = '+';
+                });
+                
+                // Toggle current answer
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    this.querySelector('span').textContent = '−';
                 }
             });
-        }
+        });
 
-        // Event listeners
-        window.addEventListener('scroll', revealOnScroll);
-        window.addEventListener('load', revealOnScroll);
+        // Scroll depth tracking
+        let scrollMilestones = {25: false, 50: false, 75: false, 100: false};
+        
+        window.addEventListener('scroll', () => {
+            const scrollPercent = Math.round(
+                (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+            );
+            
+            Object.keys(scrollMilestones).forEach(milestone => {
+                if (scrollPercent >= milestone && !scrollMilestones[milestone]) {
+                    scrollMilestones[milestone] = true;
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'scroll_depth', {
+                            'event_category': 'engagement',
+                            'event_label': milestone + '%',
+                            'value': parseInt(milestone),
+                            'custom_parameters': {
+                                'page_type': 'paper_flowers_landing'
+                            }
+                        });
+                    }
+                }
+            });
+        });
 
         // Performance tracking
         window.addEventListener('load', function() {
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'timing_complete', {
-                    'name': 'load',
+                    'name': 'page_load',
                     'value': Math.round(performance.now()),
-                    'event_category': 'CraftedByPixels'
+                    'event_category': 'performance'
                 });
             }
         });
 
-        // Exit intent detection (simplified)
+        // Exit intent detection
         document.addEventListener('mouseleave', function(e) {
-            if (e.clientY <= 0) {
-                console.log('CraftedByPixels - Exit intent detected');
-                // Could trigger exit intent popup here
-            }
-        });
-
-        // Mobile optimization
-        if ('ontouchstart' in window) {
-            document.body.classList.add('touch-device');
-            // Enhance mobile experience
-            const ctaButton = document.querySelector('.cta-button');
-            if (ctaButton) {
-                ctaButton.style.fontSize = '1.2rem';
-                ctaButton.style.padding = '20px 40px';
-            }
-        }
-
-        // Track scroll depth
-        let maxScroll = 0;
-        window.addEventListener('scroll', function() {
-            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-            if (scrollPercent > maxScroll) {
-                maxScroll = scrollPercent;
-                if (scrollPercent % 25 === 0 && typeof gtag !== 'undefined') {
-                    gtag('event', 'scroll', {
+            if (e.clientY <= 0 && !sessionStorage.getItem('exit_intent_tracked')) {
+                sessionStorage.setItem('exit_intent_tracked', 'true');
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'exit_intent', {
                         'event_category': 'engagement',
-                        'event_label': scrollPercent + '%',
-                        'value': scrollPercent
+                        'event_label': 'mouse_leave',
+                        'custom_parameters': {
+                            'page_type': 'paper_flowers_landing'
+                        }
                     });
                 }
+                
+                console.log('Exit intent detected on paper flowers landing page');
             }
         });
     </script>
