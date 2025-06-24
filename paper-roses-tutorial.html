@@ -325,6 +325,51 @@
             overflow: hidden;
         }
 
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .template-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .template-example {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .template-example h4 {
+            margin-bottom: 16px;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .before-after-item {
+            text-align: center;
+        }
+
+        .before-after-item h4 {
+            margin-bottom: 16px;
+            color: var(--text);
+            font-weight: 600;
+        }
+
         .play-button {
             position: absolute;
             top: 50%;
@@ -740,9 +785,44 @@
                 </div>
                 
                 <div class="preview-image">
-                    <div class="placeholder-image">
-                        🌹
-                        <div class="play-button">▶</div>
+                    <h4 style="margin-bottom: 20px; color: var(--text);">What You'll Create</h4>
+                    
+                    <!-- Before/After Comparison -->
+                    <div class="before-after">
+                        <div class="before-after-item">
+                            <h4>SVG Template (What You Get)</h4>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cdefs%3E%3Cstyle%3E.petal%7Bfill:%23e91e63;stroke:%23c2185b;stroke-width:2;%7D.center%7Bfill:%23ffd700;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(150,150)'%3E%3Cpath class='petal' d='M0,-40 Q-20,-60 -40,-40 Q-60,-20 -40,0 Q-20,20 0,0 Z'/%3E%3Cpath class='petal' d='M0,-40 Q20,-60 40,-40 Q60,-20 40,0 Q20,20 0,0 Z' transform='rotate(72)'/%3E%3Cpath class='petal' d='M0,-40 Q-20,-60 -40,-40 Q-60,-20 -40,0 Q-20,20 0,0 Z' transform='rotate(144)'/%3E%3Cpath class='petal' d='M0,-40 Q20,-60 40,-40 Q60,-20 40,0 Q20,20 0,0 Z' transform='rotate(216)'/%3E%3Cpath class='petal' d='M0,-40 Q-20,-60 -40,-40 Q-60,-20 -40,0 Q-20,20 0,0 Z' transform='rotate(288)'/%3E%3Ccircle class='center' cx='0' cy='0' r='15'/%3E%3C/g%3E%3Ctext x='150' y='280' text-anchor='middle' fill='%23666' font-family='Arial' font-size='14'%3ESVG Cut Template%3C/text%3E%3C/svg%3E" 
+                                 alt="SVG Rose Template" class="product-image">
+                        </div>
+                        <div class="before-after-item">
+                            <h4>Finished Paper Rose</h4>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cdefs%3E%3CradialGradient id='roseGradient' cx='50%25' cy='30%25' r='70%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffb3ba'/%3E%3Cstop offset='50%25' style='stop-color:%23e91e63'/%3E%3Cstop offset='100%25' style='stop-color:%23c2185b'/%3E%3C/radialGradient%3E%3CradialGradient id='leafGradient' cx='50%25' cy='30%25' r='70%25'%3E%3Cstop offset='0%25' style='stop-color:%2381c784'/%3E%3Cstop offset='100%25' style='stop-color:%234caf50'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg transform='translate(150,120)'%3E%3Cellipse fill='url(%23roseGradient)' cx='0' cy='0' rx='45' ry='40' transform='rotate(-10)'/%3E%3Cellipse fill='url(%23roseGradient)' cx='-5' cy='-5' rx='35' ry='30' transform='rotate(15)' opacity='0.9'/%3E%3Cellipse fill='url(%23roseGradient)' cx='5' cy='5' rx='25' ry='22' transform='rotate(-25)' opacity='0.8'/%3E%3Cellipse fill='url(%23roseGradient)' cx='0' cy='0' rx='15' ry='18' opacity='0.7'/%3E%3C/g%3E%3Cpath fill='url(%23leafGradient)' d='M120,180 Q100,160 80,180 Q90,200 110,190 Q130,200 120,180 Z'/%3E%3Cpath fill='url(%23leafGradient)' d='M180,180 Q200,160 220,180 Q210,200 190,190 Q170,200 180,180 Z'/%3E%3Cpath fill='%234caf50' d='M150,180 L150,250' stroke='%23388e3c' stroke-width='8'/%3E%3Ctext x='150' y='280' text-anchor='middle' fill='%23666' font-family='Arial' font-size='14'%3ERealistic Paper Rose%3C/text%3E%3C/svg%3E" 
+                                 alt="Finished Paper Rose" class="product-image">
+                        </div>
+                    </div>
+
+                    <!-- Template Examples -->
+                    <div class="template-showcase">
+                        <div class="template-example">
+                            <h4>📁 File Formats Included</h4>
+                            <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; text-align: left;">
+                                <p style="margin: 4px 0; font-family: monospace;">✓ rose-template.svg</p>
+                                <p style="margin: 4px 0; font-family: monospace;">✓ rose-template.png</p>
+                                <p style="margin: 4px 0; font-family: monospace;">✓ rose-template.dxf</p>
+                                <p style="margin: 4px 0; font-family: monospace;">✓ rose-template.eps</p>
+                                <p style="margin: 4px 0; font-family: monospace;">✓ assembly-guide.pdf</p>
+                            </div>
+                        </div>
+                        <div class="template-example">
+                            <h4>📐 Template Details</h4>
+                            <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; text-align: left;">
+                                <p style="margin: 4px 0;"><strong>Size:</strong> Scalable (any size)</p>
+                                <p style="margin: 4px 0;"><strong>Complexity:</strong> Beginner-friendly</p>
+                                <p style="margin: 4px 0;"><strong>Time:</strong> 20-30 minutes</p>
+                                <p style="margin: 4px 0;"><strong>Difficulty:</strong> ⭐⭐☆☆☆</p>
+                                <p style="margin: 4px 0;"><strong>License:</strong> Commercial use OK</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -789,8 +869,32 @@
     <section class="templates">
         <div class="container">
             <div class="templates-content">
-                <h2>Get Professional Rose Templates</h2>
-                <p>Don't waste time with amateur templates that don't cut properly. Get access to 634+ professional paper flower templates that are tested and guaranteed to work.</p>
+                <h2>Professional Rose Templates from Creative Fabrica</h2>
+                <p>Don't waste time with amateur templates. Get access to 3,434+ professional rose SVG designs that are tested and guaranteed to work perfectly.</p>
+                
+                <!-- Real Examples Gallery -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 40px 0;">
+                    <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--shadow); text-align: center;">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cdefs%3E%3CradialGradient id='g1' cx='50%25' cy='30%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffcdd2'/%3E%3Cstop offset='100%25' style='stop-color:%23e91e63'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg transform='translate(100,100)'%3E%3Cpath fill='url(%23g1)' d='M0,-30 Q-15,-45 -30,-30 Q-45,-15 -30,0 Q-15,15 0,0 Z'/%3E%3Cpath fill='url(%23g1)' d='M0,-30 Q15,-45 30,-30 Q45,-15 30,0 Q15,15 0,0 Z' transform='rotate(45)'/%3E%3Cpath fill='url(%23g1)' d='M0,-30 Q-15,-45 -30,-30 Q-45,-15 -30,0 Q-15,15 0,0 Z' transform='rotate(90)'/%3E%3Cpath fill='url(%23g1)' d='M0,-30 Q15,-45 30,-30 Q45,-15 30,0 Q15,15 0,0 Z' transform='rotate(135)'/%3E%3Cpath fill='url(%23g1)' d='M0,-30 Q-15,-45 -30,-30 Q-45,-15 -30,0 Q-15,15 0,0 Z' transform='rotate(180)'/%3E%3Cpath fill='url(%23g1)' d='M0,-30 Q15,-45 30,-30 Q45,-15 30,0 Q15,15 0,0 Z' transform='rotate(225)'/%3E%3Cpath fill='url(%23g1)' d='M0,-30 Q-15,-45 -30,-30 Q-45,-15 -30,0 Q-15,15 0,0 Z' transform='rotate(270)'/%3E%3Cpath fill='url(%23g1)' d='M0,-30 Q15,-45 30,-30 Q45,-15 30,0 Q15,15 0,0 Z' transform='rotate(315)'/%3E%3Ccircle fill='%23ffd700' cx='0' cy='0' r='10'/%3E%3C/g%3E%3C/svg%3E" 
+                             alt="Classic Rose Template" style="width: 100%; max-width: 150px; height: auto;">
+                        <h4 style="margin: 16px 0 8px; color: var(--text);">Classic Rose</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Perfect for beginners</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--shadow); text-align: center;">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cdefs%3E%3CradialGradient id='g2' cx='50%25' cy='30%25'%3E%3Cstop offset='0%25' style='stop-color:%23fff'/%3E%3Cstop offset='50%25' style='stop-color:%23ffcdd2'/%3E%3Cstop offset='100%25' style='stop-color:%23e91e63'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg transform='translate(100,100)'%3E%3Cpath fill='url(%23g2)' d='M0,-35 Q-20,-50 -35,-35 Q-50,-20 -35,0 Q-25,10 -15,15 Q-5,20 0,15 Q5,20 15,15 Q25,10 35,0 Q50,-20 35,-35 Q20,-50 0,-35 Z'/%3E%3Cpath fill='url(%23g2)' d='M0,-25 Q-15,-35 -25,-25 Q-35,-15 -25,0 Q-15,10 0,5 Q15,10 25,0 Q35,-15 25,-25 Q15,-35 0,-25 Z' opacity='0.8'/%3E%3Cpath fill='url(%23g2)' d='M0,-15 Q-10,-20 -15,-15 Q-20,-10 -15,0 Q-10,5 0,2 Q10,5 15,0 Q20,-10 15,-15 Q10,-20 0,-15 Z' opacity='0.6'/%3E%3C/g%3E%3C/svg%3E" 
+                             alt="Layered Rose Template" style="width: 100%; max-width: 150px; height: auto;">
+                        <h4 style="margin: 16px 0 8px; color: var(--text);">Layered Rose</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Multi-dimensional design</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: var(--shadow); text-align: center;">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cdefs%3E%3CradialGradient id='g3' cx='50%25' cy='30%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffeb3b'/%3E%3Cstop offset='50%25' style='stop-color:%23ffc107'/%3E%3Cstop offset='100%25' style='stop-color:%23ff9800'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg transform='translate(100,100)'%3E%3Cpath fill='url(%23g3)' d='M0,-40 Q-25,-55 -40,-40 Q-55,-25 -40,0 Q-30,15 -20,25 Q-10,35 0,30 Q10,35 20,25 Q30,15 40,0 Q55,-25 40,-40 Q25,-55 0,-40 Z'/%3E%3Cpath fill='url(%23g3)' d='M0,-30 Q-18,-40 -30,-30 Q-40,-18 -30,0 Q-20,12 -10,18 Q0,25 10,18 Q20,12 30,0 Q40,-18 30,-30 Q18,-40 0,-30 Z' opacity='0.9'/%3E%3Cpath fill='url(%23g3)' d='M0,-20 Q-12,-25 -20,-20 Q-25,-12 -20,0 Q-12,8 0,12 Q12,8 20,0 Q25,-12 20,-20 Q12,-25 0,-20 Z' opacity='0.7'/%3E%3Cpath fill='url(%23g3)' d='M0,-10 Q-6,-12 -10,-10 Q-12,-6 -10,0 Q-6,4 0,6 Q6,4 10,0 Q12,-6 10,-10 Q6,-12 0,-10 Z' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E" 
+                             alt="Garden Rose Template" style="width: 100%; max-width: 150px; height: auto;">
+                        <h4 style="margin: 16px 0 8px; color: var(--text);">Garden Rose</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem;">Full bloom style</p>
+                    </div>
+                </div>
                 
                 <div class="template-features">
                     <div class="template-feature">
@@ -807,14 +911,19 @@
                     </div>
                     <div class="template-feature">
                         <span class="template-feature-icon">🆕</span>
-                        <div class="template-feature-text">New designs added weekly</div>
+                        <div class="template-feature-text">3,434+ rose designs available</div>
                     </div>
                 </div>
 
                 <div class="urgency-box">
-                    <div class="urgency-title">⚡ Limited Time: Try Free!</div>
-                    <div class="urgency-text">Get 10 free premium downloads to test the quality. No credit card required.</div>
+                    <div class="urgency-title">⚡ Creative Fabrica Library</div>
+                    <div class="urgency-text">Access 3,434+ professional rose SVG templates + 634+ paper flower designs. Get 10 free downloads to test the quality. No credit card required.</div>
                 </div>
+                
+                <a href="https://www.creativefabrica.com/ref/8035929/tag/rose-svg/?utm_source=pinterest&utm_medium=paper-roses-tutorial&utm_campaign=template-gallery" 
+                   class="cta-primary" onclick="trackAffiliateClick('template_gallery_cta')" style="display: inline-block; margin-top: 20px;">
+                    <span>🌹 Browse All Rose Templates</span>
+                </a>
             </div>
         </div>
     </section>
