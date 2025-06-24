@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Paper Roses Tutorial - Easy Step by Step Guide | CraftedByPixels</title>
+    <meta name="description" content="Learn how to make stunning paper roses with our easy step-by-step tutorial. Get professional SVG templates for perfect results every time. Perfect for beginners!">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="paper roses tutorial, DIY paper roses, how to make paper roses, paper rose template, SVG paper rose, Cricut paper roses">
+    <meta name="author" content="CraftedByPixels">
+    <link rel="canonical" href="https://CraftedByPixels.github.io/pinterest-landing-pages/paper-roses-tutorial.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="DIY Paper Roses Tutorial - Easy Step by Step Guide">
+    <meta property="og:description" content="Learn how to make stunning paper roses with our easy tutorial. Professional SVG templates included.">
+    <meta property="og:image" content="https://CraftedByPixels.github.io/pinterest-landing-pages/images/paper-roses-tutorial-og.jpg">
+    <meta property="og:url" content="https://CraftedByPixels.github.io/pinterest-landing-pages/paper-roses-tutorial.html">
+    <meta property="og:type" content="article">
+    
+    <!-- Pinterest Rich Pins -->
+    <meta name="pinterest-rich-pin" content="true">
+    <meta property="article:author" content="CraftedByPixels">
+    <meta property="article:section" content="DIY Tutorials">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+    
+    <style>
+        :root {
+            --rose-pink: #e91e63;
+            --rose-light: #f8bbd9;
+            --rose-dark: #c2185b;
+            --green: #4caf50;
+            --gold: #ffd700;
+            --text: #2c3e50;
+            --text-light: #546e7a;
+            --bg: #fafafa;
+            --white: #ffffff;
+            --border: #e0e0e0;
+            --shadow: 0 4px 20px rgba(233,30,99,0.1);
+            --shadow-hover: 0 8px 30px rgba(233,30,99,0.2);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --font-primary: 'Inter', sans-serif;
+            --font-display: 'Playfair Display', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--rose-pink);
+        }
+
+        .breadcrumb {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--rose-pink);
+            text-decoration: none;
+        }
+
+        .cta-header {
+            background: var(--rose-pink);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-header:hover {
+            background: var(--rose-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fce4ec 0%, var(--rose-light) 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="150" cy="150" r="80" fill="rgba(233,30,99,0.1)"/><circle cx="850" cy="200" r="120" fill="rgba(233,30,99,0.05)"/><circle cx="700" cy="750" r="100" fill="rgba(233,30,99,0.08)"/><path d="M300,400 Q350,350 400,400 Q450,450 400,500 Q350,550 300,500 Q250,450 300,400 Z" fill="rgba(233,30,99,0.06)"/></svg>');
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--green);
+            color: var(--white);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .difficulty-indicator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .difficulty-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            padding: 12px 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .difficulty-icon {
+            font-size: 1.2rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary {
+            background: var(--rose-pink);
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-primary:hover {
+            background: var(--rose-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: var(--text);
+            padding: 16px 32px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--rose-pink);
+            color: var(--rose-pink);
+        }
+
+        /* Tutorial Preview */
+        .tutorial-preview {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .preview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .preview-text h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 24px;
+        }
+
+        .preview-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 32px;
+        }
+
+        .preview-steps {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .preview-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: var(--radius);
+        }
+
+        .step-number {
+            background: var(--rose-pink);
+            color: var(--white);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .step-text {
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .preview-image {
+            background: var(--bg);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .placeholder-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #fce4ec, var(--rose-light));
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: var(--rose-pink);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(233, 30, 99, 0.9);
+            color: var(--white);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .play-button:hover {
+            background: var(--rose-pink);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        /* What You'll Need */
+        .materials {
+            padding: 80px 0;
+            background: var(--bg);
+        }
+
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .material-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .material-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .material-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .material-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .material-description {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Templates Section */
+        .templates {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .templates-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .templates-content h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 24px;
+        }
+
+        .templates-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .template-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .template-feature {
+            background: #f8f9fa;
+            padding: 24px;
+            border-radius: var(--radius);
+            text-align: center;
+        }
+
+        .template-feature-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            display: block;
+            color: var(--rose-pink);
+        }
+
+        .template-feature-text {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .urgency-box {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 2px solid #f1c40f;
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .urgency-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #d68910;
+            margin-bottom: 12px;
+        }
+
+        .urgency-text {
+            color: #a77d06;
+            margin-bottom: 20px;
+        }
+
+        /* CTA Section */
+        .main-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--rose-pink), var(--rose-dark));
+            color: var(--white);
+            text-align: center;
+        }
+
+        .main-cta h2 {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .main-cta p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .cta-big {
+            background: var(--white);
+            color: var(--rose-pink);
+            padding: 20px 40px;
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cta-big:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .guarantee {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 80px 0;
+            background: var(--bg);
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 16px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            padding: 0 20px 20px;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text);
+            color: var(--white);
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-disclaimer {
+            opacity: 0.7;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .difficulty-indicator {
+                gap: 20px;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .preview-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .materials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .template-features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🌸 CraftedByPixels</div>
+                <div class="breadcrumb">
+                    <a href="/">Home</a> → <a href="/paper-flowers/">Paper Flowers</a> → Paper Roses Tutorial
+                </div>
+                <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=paper-roses-tutorial&utm_campaign=header-cta" 
+                   class="cta-header" onclick="trackAffiliateClick('header_cta')">Get Templates</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">✨ Beginner-Friendly Tutorial</div>
+                
+                <h1 class="hero-title">How to Make Beautiful Paper Roses - Step by Step Tutorial</h1>
+                
+                <p class="hero-subtitle">
+                    Create stunning, realistic paper roses that look like they came from a professional florist. 
+                    Perfect for weddings, home decor, or gifts. No experience needed!
+                </p>
+                
+                <div class="difficulty-indicator">
+                    <div class="difficulty-item">
+                        <span class="difficulty-icon">⏱️</span>
+                        <span>30 minutes</span>
+                    </div>
+                    <div class="difficulty-item">
+                        <span class="difficulty-icon">📊</span>
+                        <span>Beginner Level</span>
+                    </div>
+                    <div class="difficulty-item">
+                        <span class="difficulty-icon">💰</span>
+                        <span>Under $5 cost</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#tutorial" class="cta-secondary">Start Tutorial</a>
+                    <a href="https://www.creativefabrica.com/ref/8035929/tag/paper-flower-svg/?utm_source=pinterest&utm_medium=paper-roses-tutorial&utm_campaign=hero-primary" 
+                       class="cta-primary" onclick="trackAffiliateClick('hero_primary_cta')">
+                        <span>🌹 Get Rose Templates</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Preview -->
+    <section class="tutorial-preview" id="tutorial">
+        <div class="container">
+            <div class="preview-content">
+                <div class="preview-text">
+                    <h2>What You'll Learn</h2>
+                    <p>This comprehensive tutorial will teach you everything you need to know to create professional-looking paper roses from start to finish.</p>
+                    
+                    <ol class="preview-steps">
+                        <li class="preview-step">
+                            <div class="step-number">1</div>
+                            <div class="step-text">Choose and prepare your paper (we'll show you the best types)</div>
+                        </li>
+                        <li class="preview-step">
+                            <div class="step-number">2</div>
+                            <div class="step-text">Cut petals using our professional SVG template</div>
+                        </li>
+                        <li class="preview-step">
+                            <div class="step-number">3</div>
+                            <div class="step-text">Shape and curl petals for realistic look</div>
+                        </li>
+                        <li class="preview-step">
+                            <div class="step-number">4</div>
+                            <div class="step-text">Assemble your rose layer by layer</div>
+                        </li>
+                        <li class="preview-step">
+                            <div class="step-number">5</div>
+                            <div class="step-text">Add finishing touches and stem</div>
+                        </li>
+                    </ol>
+                    
+                    <a href="#materials" class="cta-secondary">See Materials List</a>
+                </div>
+                
+                <div class="preview-image">
+                    <div class="placeholder-image">
+                        🌹
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="materials" id="materials">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--text); margin-bottom: 20px;">What You'll Need</h2>
+                <p style="font-size: 1.1rem; color: var(--text-light);">Simple materials you probably already have at home</p>
+            </div>
+
+            <div class="materials-grid">
+                <div class="material-card">
+                    <span class="material-icon">📄</span>
+                    <h3 class="material-title">Cardstock Paper</h3>
+                    <p class="material-description">65lb cardstock in your favorite color (pink, red, white work best)</p>
+                </div>
+
+                <div class="material-card">
+                    <span class="material-icon">✂️</span>
+                    <h3 class="material-title">Cutting Machine</h3>
+                    <p class="material-description">Cricut, Silhouette, or good scissors if cutting by hand</p>
+                </div>
+
+                <div class="material-card">
+                    <span class="material-icon">🔧</span>
+                    <h3 class="material-title">Basic Tools</h3>
+                    <p class="material-description">Glue stick, pencil for curling, and your hands!</p>
+                </div>
+
+                <div class="material-card">
+                    <span class="material-icon">📱</span>
+                    <h3 class="material-title">SVG Template</h3>
+                    <p class="material-description">Professional rose template (we'll show you where to get it)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="templates">
+        <div class="container">
+            <div class="templates-content">
+                <h2>Get Professional Rose Templates</h2>
+                <p>Don't waste time with amateur templates that don't cut properly. Get access to 634+ professional paper flower templates that are tested and guaranteed to work.</p>
+                
+                <div class="template-features">
+                    <div class="template-feature">
+                        <span class="template-feature-icon">✅</span>
+                        <div class="template-feature-text">Perfect cutting every time</div>
+                    </div>
+                    <div class="template-feature">
+                        <span class="template-feature-icon">💼</span>
+                        <div class="template-feature-text">Commercial license included</div>
+                    </div>
+                    <div class="template-feature">
+                        <span class="template-feature-icon">📱</span>
+                        <div class="template-feature-text">All cutting machines supported</div>
+                    </div>
+                    <div class="template-feature">
+                        <span class="template-feature-icon">🆕</span>
+                        <div class="template-feature-text">New designs added weekly</div>
+                    </div>
+                </div>
+
+                <div class="urgency-box">
+                    <div class="urgency-title">⚡ Limited Time: Try Free!</div>
+                    <div class="urgency-text">Get 10 free premium downloads to test the quality. No credit card required.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main CTA -->
+    <section class="main-cta">
+        <div class="container">
+            <h2>Ready to Create Your First Paper Rose?</h2>
+            <p>Get instant access to professional-grade SVG templates and start making beautiful roses in minutes!</p>
+            
+            <div class="cta-buttons">
+                <a href="https://www.creativefabrica.com/ref/8035929/?utm_source=pinterest&utm_medium=paper-roses-tutorial&utm_campaign=main-cta" 
+                   class="cta-big" onclick="trackAffiliateClick('main_cta')">
+                    <span>🌹 Get Rose Templates Now</span>
+                </a>
+            </div>
+            
+            <div class="guarantee">
+                <span>🛡️</span>
+                <span>10 free downloads • Commercial license • Cancel anytime</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--text);">Common Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Can I really make roses that look professional? <span>+</span></div>
+                    <div class="faq-answer">Absolutely! Our step-by-step tutorial is designed for complete beginners. With the right template and our guidance, your roses will look like they came from a florist.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do I need a Cricut machine? <span>+</span></div>
+                    <div class="faq-answer">Not necessarily! While Cricut makes it easier and more precise, you can cut the templates by hand with good scissors. We include PDF printable versions for hand cutting.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How long does it take to make one rose? <span>+</span></div>
+                    <div class="faq-answer">Once you get the hang of it, about 15-20 minutes per rose. Your first one might take 30-45 minutes as you learn the technique.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What's the best paper to use? <span>+</span></div>
+                    <div class="faq-answer">65lb cardstock works perfectly. It's thick enough to hold shape but flexible enough to curl. Avoid regular printer paper (too flimsy) or cardboard (too thick).</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I sell roses I make with these templates? <span>+</span></div>
+                    <div class="faq-answer">Yes! The templates come with a commercial license, so you can sell your finished paper roses at craft fairs, on Etsy, or anywhere else.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="/">Home</a>
+                    <a href="/paper-flowers/">More Tutorials</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="mailto:hello@craftedbypixels.com">Contact</a>
+                </div>
+                <div class="footer-disclaimer">
+                    &copy; 2025 CraftedByPixels. This page contains affiliate links to Creative Fabrica. 
+                    We may earn a commission from purchases at no extra cost to you. 
+                    All tutorial content and instructions are our own.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Detailed affiliate tracking for this specific tutorial page
+        function trackAffiliateClick(source) {
+            // Google Analytics tracking
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'click', {
+                    'event_category': 'affiliate_click',
+                    'event_label': source,
+                    'custom_parameters': {
+                        'affiliate_id': '8035929',
+                        'page_type': 'tutorial_landing',
+                        'tutorial_topic': 'paper_roses',
+                        'conversion_source': source,
+                        'user_intent': 'tutorial_seeker'
+                    }
+                });
+            }
+
+            // Detailed console logging for tracking
+            console.log('Paper Roses Tutorial - Affiliate click tracked:', {
+                source: source,
+                timestamp: new Date().toISOString(),
+                page: 'paper-roses-tutorial',
+                affiliate_id: '8035929',
+                tutorial_topic: 'paper_roses',
+                user_journey_stage: getUserJourneyStage()
+            });
+
+            // Visual feedback
+            const button = event.target.closest('a, button');
+            if (button) {
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = '';
+                }, 150);
+            }
+        }
+
+        // Determine user journey stage based on scroll position
+        function getUserJourneyStage() {
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            
+            if (scrollPercent < 25) return 'awareness';
+            if (scrollPercent < 50) return 'interest';
+            if (scrollPercent < 75) return 'consideration';
+            return 'decision';
+        }
+
+        // Page view tracking with tutorial-specific data
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                'page_title': document.title,
+                'page_location': window.location.href,
+                'custom_parameters': {
+                    'affiliate_id': '8035929',
+                    'page_type': 'tutorial_landing',
+                    'tutorial_topic': 'paper_roses',
+                    'landing_version': 'tutorial_focused_v1',
+                    'target_audience': 'diy_beginners'
+                }
+            });
+        }
+
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('span');
+                const isOpen = answer.classList.contains('show');
+                
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('show');
+                });
+                document.querySelectorAll('.faq-question span').forEach(span => {
+                    span.textContent = '+';
+                });
+                
+                // Toggle current answer
+                if (!isOpen) {
+                    answer.classList.add('show');
+                    icon.textContent = '−';
+                    
+                    // Track FAQ engagement
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'faq_click', {
+                            'event_category': 'engagement',
+                            'event_label': this.textContent.replace(' +', '').replace(' −', ''),
+                            'custom_parameters': {
+                                'tutorial_topic': 'paper_roses'
+                            }
+                        });
+                    }
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Tutorial-specific scroll depth tracking
+        let tutorialScrollMilestones = {
+            tutorial_start: false,
+            materials_viewed: false,
+            templates_viewed: false,
+            cta_viewed: false
+        };
+        
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            
+            // Track when user reaches tutorial section
+            const tutorialSection = document.getElementById('tutorial');
+            if (tutorialSection && !tutorialScrollMilestones.tutorial_start) {
+                const tutorialTop = tutorialSection.offsetTop;
+                if (scrollY >= tutorialTop - 200) {
+                    tutorialScrollMilestones.tutorial_start = true;
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'tutorial_engagement', {
+                            'event_category': 'tutorial_progress',
+                            'event_label': 'tutorial_start_viewed',
+                            'custom_parameters': {
+                                'tutorial_topic': 'paper_roses'
+                            }
+                        });
+                    }
+                }
+            }
+            
+            // Track when user reaches materials section
+            const materialsSection = document.getElementById('materials');
+            if (materialsSection && !tutorialScrollMilestones.materials_viewed) {
+                const materialsTop = materialsSection.offsetTop;
+                if (scrollY >= materialsTop - 200) {
+                    tutorialScrollMilestones.materials_viewed = true;
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'tutorial_engagement', {
+                            'event_category': 'tutorial_progress',
+                            'event_label': 'materials_section_viewed',
+                            'custom_parameters': {
+                                'tutorial_topic': 'paper_roses'
+                            }
+                        });
+                    }
+                }
+            }
+        });
+
+        // Track time spent on page
+        let pageStartTime = Date.now();
+        
+        window.addEventListener('beforeunload', function() {
+            const timeSpent = Math.round((Date.now() - pageStartTime) / 1000);
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_engagement', {
+                    'event_category': 'time_on_page',
+                    'event_label': 'paper_roses_tutorial',
+                    'value': timeSpent,
+                    'custom_parameters': {
+                        'tutorial_topic': 'paper_roses',
+                        'engagement_level': timeSpent > 120 ? 'high' : timeSpent > 60 ? 'medium' : 'low'
+                    }
+                });
+            }
+        });
+
+        // Performance tracking
+        window.addEventListener('load', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'timing_complete', {
+                    'name': 'page_load',
+                    'value': Math.round(performance.now()),
+                    'event_category': 'performance',
+                    'custom_parameters': {
+                        'page_type': 'tutorial_landing'
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
